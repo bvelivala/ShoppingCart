@@ -19,7 +19,7 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
  *         (useful when upgrading to a new version of Hibernate Validator/ Bean Validation)
  */
 public class CartInfoValidatorTest {
-
+     //Create validator
     private Validator createValidator() {
         LocalValidatorFactoryBean localValidatorFactoryBean = new LocalValidatorFactoryBean();
         localValidatorFactoryBean.afterPropertiesSet();
