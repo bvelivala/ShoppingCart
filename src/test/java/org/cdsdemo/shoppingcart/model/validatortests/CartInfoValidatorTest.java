@@ -32,7 +32,7 @@ public class CartInfoValidatorTest {
         LocaleContextHolder.setLocale(Locale.ENGLISH);
                 
         CartInfo cartInfo = new CartInfo();
-        cartInfo.setOrderNum(1);
+        cartInfo.setOrderNum(0);
         
         Validator validator = createValidator();
         Set<ConstraintViolation<CartInfo>> constraintViolations = validator.validate(cartInfo);
