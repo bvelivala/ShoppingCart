@@ -4,7 +4,7 @@
  
 <div class="footer-container">
  
-   @Copy right <a href="http://o7planning.org" target="_blank">o7planning.org</a>
+   @Copy right <a href="http://cognizant.com" target="_blank">cognizant.com</a>
    <br>
    See more <a>demo</a>
     
