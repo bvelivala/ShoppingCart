@@ -143,6 +143,12 @@
             <version>5.1.0.Final</version>
         </dependency>
  
+	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>9.4-1200-jdbc41</version>
+	</dependency>
  
         <!-- MySQL JDBC driver -->
         <!-- http://mvnrepository.com/artifact/mysql/mysql-connector-java -->
