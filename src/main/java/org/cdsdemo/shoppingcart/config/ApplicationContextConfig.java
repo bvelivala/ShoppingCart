@@ -74,9 +74,9 @@ public class ApplicationContextConfig {
         /*dataSource.setUrl(env.getProperty("ds.url"));
         dataSource.setUsername(env.getProperty("ds.username"));
         dataSource.setPassword(env.getProperty("ds.password"));*/
-        dataSource.setUrl(System.getEnv("SONARQUBE_JDBC_URL"));
-        dataSource.setUsername(System.getEnv("SONARQUBE_JDBC_USERNAME"));
-        dataSource.setPassword(System.getEnv("SONARQUBE_JDBC_PASSWORD"));
+        dataSource.setUrl(System.getenv("SONARQUBE_JDBC_URL"));
+        dataSource.setUsername(System.getenv("SONARQUBE_JDBC_USERNAME"));
+        dataSource.setPassword(System.getenv("SONARQUBE_JDBC_PASSWORD"));
          
         System.out.println("## getDataSource: " + dataSource);
          
