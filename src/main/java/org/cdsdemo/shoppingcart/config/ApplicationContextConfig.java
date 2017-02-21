@@ -71,9 +71,12 @@ public class ApplicationContextConfig {
  
         // See: ds-hibernate-cfg.properties
         dataSource.setDriverClassName(env.getProperty("ds.database-driver"));
-        dataSource.setUrl(env.getProperty("ds.url"));
+        /*dataSource.setUrl(env.getProperty("ds.url"));
         dataSource.setUsername(env.getProperty("ds.username"));
-        dataSource.setPassword(env.getProperty("ds.password"));
+        dataSource.setPassword(env.getProperty("ds.password"));*/
+        dataSource.setUrl(System.getEnv("SONARQUBE_JDBC_URL"));
+        dataSource.setUsername(System.getEnv("SONARQUBE_JDBC_USERNAME"));
+        dataSource.setPassword(System.getEnv("SONARQUBE_JDBC_PASSWORD"));
          
         System.out.println("## getDataSource: " + dataSource);
          
