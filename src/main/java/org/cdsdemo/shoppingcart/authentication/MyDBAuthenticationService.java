@@ -20,6 +20,7 @@ public class MyDBAuthenticationService implements UserDetailsService {
     @Autowired
     private AccountDAO accountDAO;
  
+    //added comment for testing
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Account account = accountDAO.findAccount(username);
         System.out.println("Account= " + account);
